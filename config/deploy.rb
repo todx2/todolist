@@ -31,6 +31,7 @@ set :deploy_to, "/home/deploy/#{fetch :application}"
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/system}
 
 
 # Default value for default_env is {}
